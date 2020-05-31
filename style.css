@@ -11,12 +11,14 @@
   background-image: url(./img/banner.png);
   width: 1920px;
   height: 1280px;
-  padding-top: 400px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#banner #words {
-  height: 480px;
-  width: 65px;
+#banner img {
   margin: 0 auto;
 }
 
@@ -43,10 +45,6 @@ nav #box {
   display: grid;
   -ms-grid-columns: 204px 351px 398px 120px 110px;
       grid-template-columns: 204px 351px 398px 120px 110px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 nav #box #link {
@@ -56,6 +54,17 @@ nav #box #link {
       grid-template-columns: repeat(3, 1fr);
   font-size: 18px;
   letter-spacing: 5px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav #box #link a:nth-child(2) {
+  text-align: center;
+}
+
+nav #box #link a:nth-child(3) {
+  text-align: right;
 }
 
 nav #box #social {
@@ -63,5 +72,28 @@ nav #box #social {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav #box #social a:nth-child(2) {
+  text-align: right;
+}
+
+#content {
+  background-image: url(./img/back.png);
+  width: 1920px;
+  height: 500px;
+  border: 1px solid white;
+}
+
+#content h1 {
+  letter-spacing: 5px;
+  font-family: 微軟正黑體;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin: 40px auto;
 }
 /*# sourceMappingURL=style.css.map */
