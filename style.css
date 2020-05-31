@@ -97,7 +97,7 @@ nav #box #social a:nth-child(2) {
   margin-bottom: 60px;
 }
 
-#news {
+#content #news {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -107,19 +107,19 @@ nav #box #social a:nth-child(2) {
   margin: 0 auto;
 }
 
-#news div {
+#content #news div {
   width: 350px;
   height: 510px;
   padding: 40px 30px;
   background-color: white;
 }
 
-#news div hr {
+#content #news div hr {
   margin-bottom: 10px;
   margin-top: 5px;
 }
 
-#news div h5 {
+#content #news div h5 {
   color: #49aa45;
   font-size: 14px;
   font-weight: 450;
@@ -127,23 +127,64 @@ nav #box #social a:nth-child(2) {
   text-align: center;
 }
 
-#news div h3 {
+#content #news div h3 {
   letter-spacing: 5px;
   font-weight: 600;
   text-align: center;
   margin-top: 15px;
 }
 
-#news div p {
+#content #news div p {
   letter-spacing: 3px;
   font-size: 14px;
   margin-bottom: 30px;
   padding: 5px;
 }
 
-#news div img {
+#content #news div img {
   width: 250px;
   height: 250px;
   margin-left: 20px;
+}
+
+#content #rec {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+#content #rec div {
+  height: 300px;
+  width: 250px;
+  position: absolute;
+  top: 73px;
+  right: 161px;
+  padding: 10px;
+}
+
+#content #rec div h4 {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  color: orange;
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-weight: 450;
+}
+
+#content #rec div h5 {
+  color: gray;
+  font-size: 10px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+#content #rec div p {
+  color: black;
+  font-size: 14px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  padding: 0px 26px;
 }
 /*# sourceMappingURL=style.css.map */

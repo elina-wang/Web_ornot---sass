@@ -98,62 +98,104 @@ nav{
         margin-bottom: 60px;
     }
 
-}
-
-
-#news{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
-    width: 1200px;
-    margin: 0 auto;
-
-    div{
-        width: 350px;
-        height: 510px;
-        padding: 40px 30px;
-        background-color: white;
-
-        hr{
-            margin-bottom: 10px;
-            margin-top: 5px;
-        }
+    #news{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+        width: 1200px;
+        margin: 0 auto;
     
-        h5{
-            color:  $green;
-            font-size: 14px;
-            font-weight: 450;
-            letter-spacing: 3px;
-            text-align: center;
-        }
+        div{
+            width: 350px;
+            height: 510px;
+            padding: 40px 30px;
+            background-color: white;
     
-        h3{
-            letter-spacing: 5px;
-            font-weight: 600;
-            text-align: center;
-            margin-top: 15px;
-        }
-    
-        p{
-            letter-spacing: 3px;
-            font-size: 14px;
-            margin-bottom: 30px;
-            padding: 5px;
+            hr{
+                margin-bottom: 10px;
+                margin-top: 5px;
+            }
         
-    
-        }
-    
-        img{
-            width: 250px;
-            height: 250px;
-            margin-left: 20px;
+            h5{
+                color:  $green;
+                font-size: 14px;
+                font-weight: 450;
+                letter-spacing: 3px;
+                text-align: center;
+            }
+        
+            h3{
+                letter-spacing: 5px;
+                font-weight: 600;
+                text-align: center;
+                margin-top: 15px;
+            }
+        
+            p{
+                letter-spacing: 3px;
+                font-size: 14px;
+                margin-bottom: 30px;
+                padding: 5px;
+            
+        
+            }
+        
+            img{
+                width: 250px;
+                height: 250px;
+                margin-left: 20px;
+            }
         }
     }
 
-   
+    #rec{
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
 
+        div{
+            // background-color: #fff;
+            height: 300px;
+            width: 250px;
+            position: absolute;
+            top: 73px;
+            right: 161px;
+            padding: 10px;
 
+            h4{
+                margin-top: 35px;
+                margin-bottom:25px;
+                color: orange;
+                font-size: 24px;
+                letter-spacing: 8px;
+                font-weight: 450;
+            }
 
+            h5{
+                color: gray;
+                font-size: 10px;
+                font-weight: 100;
+                margin-bottom: 20px;
+                letter-spacing: 3px
+            }
 
+            p{
+                color: black;
+                font-size: 14px;
+                letter-spacing: 5px;
+                line-height: 1.5;
+                padding: 0px 26px;
+                
+                
+            }
+        }
+    
+    }
+    
 }
+
+
+
+
 
