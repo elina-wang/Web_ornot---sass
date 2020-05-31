@@ -9,4 +9,53 @@
     background-image: url(./img/banner.png);
     width: 1920px;
     height: 1280px;
+    padding-top: 400px;
+
+    #words{
+    height: 480px;
+    width: 65px;
+    margin: 0 auto;
+    }
+
+}
+
+nav{
+    // 固定位置
+    position: fixed;
+    width: 1920px;
+
+    a{
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+        
+        &:hover{
+            color: black;
+        }
+
+
+    }
+
+    #box{
+        margin: 59px auto;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 204px 351px 398px 120px 110px;
+        text-align: center;
+        align-items: center;
+
+        #link{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            font-size: 18px;
+            letter-spacing: 5px;
+
+        }
+
+        #social{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
 }

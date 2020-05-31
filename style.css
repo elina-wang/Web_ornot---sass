@@ -1,4 +1,3 @@
-/* 不能在此直接編輯，會造成檔案毀損 */
 @charset "UTF-8";
 * {
   margin: 0;
@@ -12,5 +11,57 @@
   background-image: url(./img/banner.png);
   width: 1920px;
   height: 1280px;
+  padding-top: 400px;
+}
+
+#banner #words {
+  height: 480px;
+  width: 65px;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  width: 1920px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav #box {
+  margin: 59px auto;
+  width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 204px 351px 398px 120px 110px;
+      grid-template-columns: 204px 351px 398px 120px 110px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav #box #link {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+nav #box #social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 /*# sourceMappingURL=style.css.map */
