@@ -107,19 +107,51 @@ nav #box #social a:nth-child(2) {
   margin: 0 auto;
 }
 
-#content #news div {
+#content #news > div {
   width: 350px;
-  height: 510px;
+  height: 550px;
   padding: 40px 30px;
   background-color: white;
 }
 
-#content #news div hr {
+#content #news > div hr {
   margin-bottom: 10px;
   margin-top: 5px;
+  width: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-#content #news div h5 {
+#content #news > div div {
+  position: relative;
+  font-size: 0;
+}
+
+#content #news > div div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#content #news > div img {
+  width: 100%;
+}
+
+#content #news > div:hover hr {
+  width: 100%;
+}
+
+#content #news > div:hover div::before {
+  opacity: 0.5;
+}
+
+#content #news > div h5 {
   color: #49aa45;
   font-size: 14px;
   font-weight: 450;
@@ -127,24 +159,18 @@ nav #box #social a:nth-child(2) {
   text-align: center;
 }
 
-#content #news div h3 {
+#content #news > div h3 {
   letter-spacing: 5px;
   font-weight: 600;
   text-align: center;
   margin-top: 15px;
 }
 
-#content #news div p {
+#content #news > div p {
   letter-spacing: 3px;
   font-size: 14px;
   margin-bottom: 30px;
   padding: 5px;
-}
-
-#content #news div img {
-  width: 250px;
-  height: 250px;
-  margin-left: 20px;
 }
 
 #content #rec {
@@ -186,5 +212,73 @@ nav #box #social a:nth-child(2) {
   letter-spacing: 5px;
   line-height: 1.5;
   padding: 0px 26px;
+}
+
+#content #manage {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 620px auto;
+      grid-template-columns: 620px auto;
+  grid-gap: 20px;
+  padding-right: 20px;
+}
+
+#content #manage img {
+  border: 10px solid white;
+  margin-bottom: 60px;
+}
+
+#content #manage div h4 {
+  margin-bottom: 25px;
+  font-weight: 650;
+  font-size: 20px;
+  letter-spacing: 5px;
+  padding: 50px 25px;
+}
+
+#content #manage div p {
+  letter-spacing: 5px;
+  line-height: 2;
+  font-weight: 500;
+  margin-bottom: 50px;
+  padding-left: 25px;
+}
+
+#content #manage div a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 5px;
+  text-align: center;
+  border: 2px solid black;
+  text-align: center;
+  width: 150px;
+  padding: 10px 25px;
+  margin-left: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#content #manage div a:hover {
+  color: white;
+  background-color: black;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+footer img {
+  margin: 126px 0 73px;
+}
+
+footer p {
+  font-family: 微軟正黑體;
+  font-size: 12px;
+  color: black;
+  letter-spacing: 5px;
+  line-height: 2;
 }
 /*# sourceMappingURL=style.css.map */
